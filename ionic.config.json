@@ -1,0 +1,7 @@
+{
+  "name": "weatherapi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
