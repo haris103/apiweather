@@ -1,0 +1,183 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" class="main_div">
+        <!-- <div *ngFor="let s of dataArray"> -->
+        <ion-grid >
+         <!-- ROW 1 START-->
+          <ion-row>
+            <ion-col>
+              <div class="div_1">
+                <ion-icon name="apps-outline"></ion-icon>
+                <h2>Weather Forecast</h2>
+              </div>
+            </ion-col>
+          </ion-row>
+         <!-- ROW 1 END-->
+
+         <!-- ROW 2 START-->
+          <ion-row>
+            <ion-col style="">
+              <div class="row_2">
+                <ion-input placeholder="Search Your City"></ion-input>
+                <ion-icon name="search-outline"></ion-icon>
+             </div>
+            </ion-col>
+          </ion-row>
+           <!-- ROW 2 END-->
+
+          <!-- ROW 3 START-->
+          <ion-row class="row_3">
+            <ion-col>
+              <div class="div_1">
+              <!-- <h1>Today</h1> -->
+                <p>{{date}}</p>
+              </div>
+            </ion-col>
+
+            <ion-col style="">
+              <div class="div_2">
+                <h1>{{maximumValue}}-F</h1>
+                <ion-img src="../../assets/few-clouds.png" style="width:140px; height:90px;"></ion-img>
+              </div>
+            </ion-col>
+
+            <ion-col>
+              <div class="div_3">
+                <ion-icon name="apps-outline"></ion-icon>
+                 <p>{{locationName}}, {{countryRegion}}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+          <!-- ROW 3 END-->
+
+         <!-- ROW 4 START-->
+         <ion-row>
+          <ion-col class="row_4_inner" size-md="6">
+            <div class="row_4_div">
+              <ion-row>
+                <ion-col>
+                  <ion-icon name="water-outline"></ion-icon>
+                </ion-col>
+                <ion-col >
+                  <div style="display: flex;justify-content: center;align-items: center;">
+                    <ion-row  >
+                      <div class="block_div">
+                        <ion-col>
+                          <ion-text>98%</ion-text>
+                        </ion-col>
+                        <ion-col>
+                          <p>Humidity</p>
+                          </ion-col>
+                      </div>
+                    </ion-row>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-col>
+
+          <ion-col class="row_4_inner" size-md="6">
+            <div class="row_4_div">
+              <ion-row>
+                <ion-col>
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                </ion-col>
+                <ion-col >
+                  <div style="display: flex;justify-content: center;align-items: center;">
+                    <ion-row  >
+                      <div class="block_div">
+                        <ion-col>
+                          <ion-text>1010HPa</ion-text>
+                        </ion-col>
+                        <ion-col>
+                          <p>Pressure</p>
+                          </ion-col>
+                      </div>
+                    </ion-row>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-col>
+         </ion-row>
+         <!-- ROW 4 END-->
+
+          <!-- ROW 5 START-->
+          <ion-row>
+            <!-- <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;"> -->
+              <ion-col class="row_5_inner" size-md="4" size-xs="4">
+                <div class="row_5_div">
+                  <ion-row>
+                    <ion-col >
+                      <div style="display: flex;justify-content: center;align-items: center;">
+                        <ion-row  >
+                          <div class="block_div_5">
+                            <ion-col>
+                              <ion-text>+{{maximumValue1}}-F</ion-text>
+                            </ion-col>
+                            <ion-col>
+                              <p>{{date1}}</p>
+                              </ion-col>
+                          </div>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-col>
+              <ion-col class="row_5_inner" size-md="4" size-xs="4">
+                <div class="row_5_div">
+                  <ion-row>
+                    <!-- <ion-col>
+                      <ion-icon name="apps-outline"></ion-icon>
+                    </ion-col> -->
+                    <ion-col >
+                      <div style="display: flex;justify-content: center;align-items: center;">
+                        <ion-row  >
+                          <div class="block_div_5">
+                            <ion-col>
+                              <ion-text>+{{maximumValue2}}-F</ion-text>
+                            </ion-col>
+                            <ion-col>
+                              <p>{{date2}}</p>
+                              </ion-col>
+                          </div>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-col>
+              <ion-col class="row_5_inner" size-md="4" size-xs="4">
+                <div class="row_5_div">
+                  <ion-row>
+                    <!-- <ion-col>
+                      <ion-icon name="apps-outline"></ion-icon>
+                    </ion-col> -->
+                    <ion-col >
+                      <div style="display: flex;justify-content: center;align-items: center;">
+                        <ion-row  >
+                          <div class="block_div_5">
+                            <ion-col>
+                              <ion-text>+{{maximumValue3}}-F</ion-text>
+                            </ion-col>
+                            <ion-col>
+                              <p>{{date3}}</p>
+                              </ion-col>
+                          </div>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-col>
+            <!-- </div> -->
+          </ion-row>
+             <!-- ROW 5 END-->
+        </ion-grid>
+      <!-- </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
